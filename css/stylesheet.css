@@ -1,13 +1,14 @@
 * {
 	box-sizing: border-box;
+	z-index: 1;
 }
 
 body {
 	/*Want to change background image?*/
 	/*Upload a new one to the img folder.*/
 	/*Make sure you name it 'minecraft.jpg'*/
-	background: linear-gradient(rgba(20, 26, 35,0.55),rgba(20, 26, 35, 0.55)),
-				url("../img/minecraft.jpg") no-repeat center center fixed;
+	background: linear-gradient(rgba(16, 20, 26,0.65),rgba(16, 20, 26, 0.65)),
+			url("../img/minecraft.jpg") no-repeat center center fixed;
 	background-size: cover;
 	font-family: "Open Sans", Helvetica;
 	margin: 0;
@@ -109,7 +110,7 @@ p {
 	padding: 0;
 }
 
-.ip {
+#ip {
 	cursor: pointer;
 	text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
 }
@@ -160,6 +161,10 @@ p {
 	padding: 0;
 }
 
+#tsparticles {
+	z-index: 0; /* Ensures particles are under page contents */
+}
+
 
 @media(min-width: 400px) {
 	.logo img {
@@ -190,7 +195,7 @@ p {
 	}
 
 	.logo {
-		margin-bottom: 28px;
+		margin-bottom: 23px;
 	}
 	.img {
 		width: 100%;
